@@ -22,7 +22,7 @@
                 </div>
                 <div class="bg-red-400 p-9 rounded-xl">
                     <h3 class="text-3xl">Withdraw</h3>
-                    <h2 class="text-6xl">$00</h2>
+                    <h2 class="text-6xl">$<span id="wit-display">00</span></h2>
                 </div>
                 <div class="bg-blue-400 p-9 rounded-xl">
                     <h3 class="text-3xl">Balance</h3>
@@ -43,7 +43,7 @@
                     <h3 class="text-4xl">Withdraw</h3>
                     <input id="withdraw" class="m-3 p-3 block w-5/6 text-black" placeholder="Enter $ Withdraw Amount"
                         type="number">
-                    <button id="login"
+                    <button id="wit-button"
                         class="mx-3 p-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">Withdraw</button>
                 </div>
             </div>
@@ -51,6 +51,7 @@
 
     </main>
     <script src="./js_scripts/deposit.js"></script>
+    <script src="./js_scripts/withdraw.js"></script>
 </body>
 
 </html>

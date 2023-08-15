@@ -8,4 +8,7 @@ document.getElementById("dep-button").addEventListener("click", function () {
     parseInt(document.getElementById("bal-display").innerText) +
     parseInt(document.getElementById("deposit").value);
   document.getElementById("bal-display").innerText = balance;
+
+  window.alert("Deposit Successful");
+  document.getElementById("deposit").value = "";
 });
