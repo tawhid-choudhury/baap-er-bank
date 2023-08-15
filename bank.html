@@ -18,7 +18,7 @@
             <div class="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 max-w-7xl mx-auto mt-10 gap-6 text-white px-2">
                 <div class="bg-teal-400 p-9 rounded-xl">
                     <h3 class="text-3xl">Deposit</h3>
-                    <h2 class="text-6xl">$00</h2>
+                    <h2 class="text-6xl">$<span id="dep-display">00</span></h2>
                 </div>
                 <div class="bg-red-400 p-9 rounded-xl">
                     <h3 class="text-3xl">Withdraw</h3>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="bg-blue-400 p-9 rounded-xl">
                     <h3 class="text-3xl">Balance</h3>
-                    <h2 class="text-6xl">$1240</h2>
+                    <h2 class="text-6xl">$<span id="bal-display">1240</span></h2>
                 </div>
             </div>
         </section>
@@ -36,7 +36,7 @@
                     <h3 class="text-4xl">Deposit</h3>
                     <input id="deposit" class="m-3 p-3 block w-5/6 text-black" placeholder="Enter $ Deposit Amount"
                         type="number">
-                    <button id="login flex-1"
+                    <button id="dep-button"
                         class="mx-3 p-3 bg-green-500 text-white rounded-lg hover:bg-green-600">Deposit</button>
                 </div>
                 <div class="bg-purple-400 p-9 rounded-xl">
@@ -50,6 +50,7 @@
         </section>
 
     </main>
+    <script src="./js_scripts/deposit.js"></script>
 </body>
 
 </html>
