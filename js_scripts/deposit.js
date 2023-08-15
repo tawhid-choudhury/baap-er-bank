@@ -1,4 +1,9 @@
 document.getElementById("dep-button").addEventListener("click", function () {
+  if (isNaN(parseInt(document.getElementById("deposit").value))) {
+    window.alert("enter valid number");
+    document.getElementById("deposit").value = "";
+    return;
+  }
   let sum =
     parseInt(document.getElementById("dep-display").innerText) +
     parseInt(document.getElementById("deposit").value);
