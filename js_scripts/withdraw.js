@@ -10,15 +10,9 @@ document.getElementById("wit-button").addEventListener("click", function () {
   ) {
     window.alert("cannot withdraw more than balance");
   } else {
-    let sum =
-      parseInt(document.getElementById("wit-display").innerText) +
-      parseInt(document.getElementById("withdraw").value);
-    document.getElementById("wit-display").innerText = sum;
+    updateDisplay("wit-display", "withdraw", "wit-display", true);
 
-    let balance =
-      parseInt(document.getElementById("bal-display").innerText) -
-      parseInt(document.getElementById("withdraw").value);
-    document.getElementById("bal-display").innerText = balance;
+    updateDisplay("bal-display", "withdraw", "bal-display", false);
 
     window.alert("withdraw Successful");
     document.getElementById("withdraw").value = "";
